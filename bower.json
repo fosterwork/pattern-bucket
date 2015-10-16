@@ -1,0 +1,19 @@
+{
+  "name": "pattern-bucket",
+  "description": "Small reusable HTML+CSS patterns",
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ["MIT"],
+  "main": [
+    "dist/sortable.css",
+    "dist/table-styling.css",
+    "dist/validation-helpers.css",
+    "dist/font-awesome-font-face-template.css"
+  ],
+  "ignore": [
+    ".gitignore",
+    "demo",
+    "src",
+    "*.md"
+  ]
+}
