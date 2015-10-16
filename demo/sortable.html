@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sortable Pattern Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../dist/sortable.css">
+</head>
+<body>
+    <h1>Sortable Pattern</h1>
+    <p>Adds sort arrows beside sortable links/elements and highlights the sort direction if any.</p>
+    <ul>
+        <li><a class="sortable" href="#">Height</a></li>
+        <li><a class="sortable desc" href="#">Weight</a></li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr class="sorter">
+                <th><a class="sortable asc" href="#">Name</a></th>
+                <th><a class="sortable" href="#">Age</a></th>
+                <th><a class="sortable" href="#">Gender</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="item">
+                <td>John</td>
+                <td>25</td>
+                <td>Male</td>
+            </tr>
+            <tr class="item">
+                <td>Sam</td>
+                <td>4</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

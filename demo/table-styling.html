@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Table Styling Pattern Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../dist/table-styling.css">
+</head>
+<body>
+    <h1>Table Styling Pattern</h1>
+    <p>Highlights every other row, headers, and footers. Adds borders and cell padding.
+    <h2>Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Employed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="item">
+                <td>John</td>
+                <td>25</td>
+                <td>Male</td>
+                <td>Yes</td>
+            </tr>
+            <tr class="item">
+                <td>Sam</td>
+                <td>4</td>
+                <td>Male</td>
+                <td>No</td>
+            </tr>
+            <tr class="item">
+                <td>Sally</td>
+                <td>40</td>
+                <td>Female</td>
+                <td>Yes</td>
+            </tr>
+            <tr class="item">
+                <td>Samantha</td>
+                <td>18</td>
+                <td>Female</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Nested Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Employed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="item">
+                <td>John</td>
+                <td>25</td>
+                <td>Male</td>
+                <td>Yes</td>
+            </tr>
+            <tr class="item">
+                <td>Sam</td>
+                <td>4</td>
+                <td>Male</td>
+                <td>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Employed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="item">
+                                <td>John</td>
+                                <td>25</td>
+                                <td>Male</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Sam</td>
+                                <td>4</td>
+                                <td>Male</td>
+                                <td>No</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Sally</td>
+                                <td>40</td>
+                                <td>Female</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr class="item">
+                                <td>Samantha</td>
+                                <td>18</td>
+                                <td>Female</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+            <tr class="item">
+                <td>Sally</td>
+                <td>40</td>
+                <td>Female</td>
+                <td>Yes</td>
+            </tr>
+            <tr class="item">
+                <td>Samantha</td>
+                <td>18</td>
+                <td>Female</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    <h2>Row Headers and Table Footer</h2>
+
+<table>
+    <caption>Caption</caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Employed</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="4">Another header row</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Employee 1</th>
+            <td>John</td>
+            <td>25</td>
+            <td>Male</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th>Employee 2</th>
+            <td>Sam</td>
+            <td>4</td>
+            <td>Male</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <th>Employee 3</th>
+            <td>Sally</td>
+            <td>40</td>
+            <td>Female</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th>Employee 4</th>
+            <td>Samantha</td>
+            <td>18</td>
+            <td>Female</td>
+            <td>Yes</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>This</td>
+            <td>is</td>
+            <td>a</td>
+            <td>table</td>
+            <td>footer</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+</body>
+</html>
